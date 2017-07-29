@@ -6,16 +6,17 @@ public class TheVoid {
 	Scanner x = new Scanner(System.in);
 
 	public String openning() {
-		System.out.println(
+		System.out.printf("%-15s",
 				"\nIn the times when there was no time and in the places where there was no place,\na young adventurer lost his way, on the way to find the ways to a secret little but precious little treasure...");
 		System.out.println(
-				"\n You fell asleep lone traveller, but now you are awake.\n Can you remember your name? \n [Enter your name] \n");
+				"\nYou fell asleep lone traveller, but now you are awake.\nCan you remember your name? \n[Enter your name] \n");
 		return x.nextLine();
 	}
 
 	public void start(String name) {
-		System.out.println("OK " + name
-				+ " that's good... \n Better than last time...\n Now we have to move, you can not stand still for too much in this world.");
+		System.out.println("\nNice " + name
+				+ " that's good... \nBetter than last time...\nNow we have to move, you can not stand still for too much in this world.");
+		System.out.println("\nIn case you have forgotten again...\nThe watch like compass on your arm shows the distance to your quest treasure\nUse it wisely to find your way... ");
 	}
 
 	public String mover(int[] pos) {
@@ -33,4 +34,5 @@ public class TheVoid {
 
 		return direction;
 	}
+
 }

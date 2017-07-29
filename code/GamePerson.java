@@ -1,10 +1,9 @@
 package code;
 
-public abstract class GamePerson {
+public class GamePerson extends GameObject {
 
-	protected String name;
 	protected int maxHealth;
 	protected int currentHealth;
 	protected int hitDamage;
-	protected int [] position;
+	
 }
